@@ -8,7 +8,7 @@ export default function Preview({ title, subtitle, text, align, font }) {
     <div className={`preview ${ font }`} style={{ textAlign: align }}>
       <h1>{title}</h1>
       <h3>{subtitle}</h3>
-      <h1>{text}</h1>
+      <p>{text}</p>
     </div>
   );
 }
