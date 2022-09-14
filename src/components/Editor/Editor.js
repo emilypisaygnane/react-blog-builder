@@ -6,8 +6,8 @@ export default function Editor({
 
   title, setTitle, 
   subtitle, setSubtitle, 
-  // font, setFont, 
-  // align, setAlign, 
+  font, setFont, 
+  align, setAlign, 
   text, setText 
 
 }) {
@@ -23,7 +23,7 @@ export default function Editor({
         <label>Subtitle</label>
       </div>
       <div className="form-control">
-        <select>
+        <select type="text" value={font} onChange={(e) => setFont(e.target.value)}>
           <option value="architect">{"Architect's Daughter"}</option>
           <option value="comforter">Comforter</option>
           <option value="fredoka">Fredoka</option>
@@ -39,7 +39,7 @@ export default function Editor({
         <label>Alignment</label>
         <div className="radio-group">
           <label>
-            <input name="align" type="radio" value="left" />
+            <input name="left-align" type="radio" value={align} onChange={(e) => setAlign(e.target.value)} />
             <i className="ri-align-left"></i>
           </label>
           <label>
