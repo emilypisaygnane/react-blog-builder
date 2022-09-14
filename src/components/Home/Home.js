@@ -11,7 +11,7 @@ export default function Home() {
   const [subtitle, setSubtitle] = useState('default state');
   const [font, setFont] = useState('indie-flower');
   const [align, setAlign] = useState('center');
-  const [text, setText] = useState('')
+  const [text, setText] = useState('');
   
   return (
     <main>
