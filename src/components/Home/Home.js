@@ -9,7 +9,7 @@ export default function Home() {
   // add useState calls here for title, subtitle, font, align, and text
   const [title, setTitle] = useState('default state');
   const [subtitle, setSubtitle] = useState('default state');
-  // const [font, setFont] = useState('indie-flower');
+  const [font, setFont] = useState('indie-flower');
   // const [align, setAlign] = useState('center');
 
   
@@ -23,7 +23,6 @@ export default function Home() {
       />
       <Editor 
         title={title} setTitle={setTitle} 
-        // setFont={setFont}
       />
     </main>
   );
