@@ -21,14 +21,14 @@ export default function Home() {
         subtitle={subtitle} 
         font={font}
         align={align}
-        // text={text}
+        text={text}
       />
       <Editor 
         title={title} setTitle={setTitle} 
         setSubtitle={setSubtitle}
         setFont={setFont}
         setAlign={setAlign}
-        // setText={setText}
+        setText={setText}
       />
     </main>
   );
