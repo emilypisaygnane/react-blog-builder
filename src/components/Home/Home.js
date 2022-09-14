@@ -10,8 +10,8 @@ export default function Home() {
   const [title, setTitle] = useState('default state');
   const [subtitle, setSubtitle] = useState('default state');
   const [font, setFont] = useState('indie-flower');
-  // const [align, setAlign] = useState('center');
-
+  const [align, setAlign] = useState('center');
+  const [text, setText] = useState('')
   
   return (
     <main>
@@ -20,9 +20,15 @@ export default function Home() {
         title={title} 
         subtitle={subtitle} 
         font={font}
+        align={align}
+        // text={text}
       />
       <Editor 
         title={title} setTitle={setTitle} 
+        setSubtitle={setSubtitle}
+        setFont={setFont}
+        setAlign={setAlign}
+        // setText={setText}
       />
     </main>
   );
