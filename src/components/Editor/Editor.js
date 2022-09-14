@@ -43,7 +43,7 @@ export default function Editor({
             <i className="ri-align-left"></i>
           </label>
           <label>
-            <input name="align" type="radio" value="center" />
+            <input name="center-align" type="radio" value={align} onChange={(e) => setAlign(e.target.value)}  />
             <i className="ri-align-center"></i>
           </label>
           <label>
